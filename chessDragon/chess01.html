@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enxadristas</title>
+<style>
+body{
+background-color: green;
+font: 20pt Arial ;
+}
+input {
+    font : normal 20pt ;
+    width: 65px ;
+    height: 50px;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+  <h1>top 5 melhores enxadristas</h1>
+  <input type="button" value="Click" onclick="clicar()" >
+  <div id="res">Enxadristas</div>
+<script>
+    var res= window.document.getElementById('res')
+    res.addEventListener('mouseout',sair)
+function clicar(){
+var res= window.document.getElementById('res')
+res.innerHTML= 'Bobby Fisher <br/>  Magnus Calsen <br/> Karpov <br/> Kasparov <br/> Mikhail Tal' 
+}
+function sair(){ 
+var res = window.document.getElementById('res')
+res.innerHTML='Enxadristas'
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
