@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TesteJs</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: rgb(112, 127, 170);
+        }
+        #prof{
+            background-color: aquamarine;
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, seja Bem-Vindo</h1>
+<div id="prof" >Digite Professor(a)...</div>
+    <script>
+var a=document.querySelector('#prof')
+        a.addEventListener('click',clicou)
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout',sair)
+        
+// eventos:mouseout=sair
+// moseenter=entrar
+// mousemove=movimentar o mouse
+// mousedown=segurar o mouse
+// mouseup=soltar o mouse
+// click=clicar
+function clicou(){
+ a.style.background='green'
+ a.innerHTML='clicou'    
+}      
+function entrar(){
+ a.style.background='red'   
+ a.innerHTML='entrou' 
+} 
+function sair(){
+ a.style.background='aquamarine'  
+ a.innerHTML='saiu' 
+} 
+    </script>
+</body>
+</html>

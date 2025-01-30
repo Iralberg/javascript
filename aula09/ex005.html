@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
 body{
-background-color: blue;
- color:white;
- font: normal 20pt Arial
+
+ font: normal 20px Arial
 }
+
 </style>
 </head>
 <body>
     <h1>Iniciando estudos do DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
+    
 <div id="msg" >Clique em mim</div>
+<div class="msg02">EXpandir</div>
 
 <script>
-var corpo = window.document.body
-var p1 = window.document.getElementsByTagName('p')[1]
-var d= window.document.getElementById('msg')
-s.style.background ='green'
+    var p1 = window.document.getElementsByTagName('p')[1]
+    var d= window.document.getElementById('msg')
+    var di= document.querySelector('div.msg02')
+    d.style.background ='green'
+    var copo = window.document.body
+    copo.style.background= 'blue'
+di.style.background='white'
+   
+
 </script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Passaporte</h1>
+    <input type="text" id="nam" placeholder="Digite seu País"> :
+    <button onclick="salvar()">Salvar</button>
+    <div id="res"></div>
+    <script>
+        function salvar(){
+var na=document.querySelector('#nam')
+var nam= na.value
+var rls=document.querySelector('#res')
+rls.innerHTML=`<p>Você mora no ${nam}</p>`
+if (nam =='Brasil'){
+    res.innerHTML+='Você é brasileiro'
+} else{
+    res.innerHTML+='Você é estrangeiro'
+}
+        }
+    </script>
+</body>
+</html>
