@@ -1,0 +1,10 @@
+section{
+    display: flex;
+}
+div{
+    margin-right: 4px;
+    margin-left: 4px;
+}
+#msg{
+    background-color: rgba(99, 241, 99, 0.87);
+}
