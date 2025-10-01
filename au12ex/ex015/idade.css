@@ -25,4 +25,6 @@ div{
 }
 button{
     background-color: rgb(103, 190, 103);
+    border: none;
+    padding: 7px;
 }

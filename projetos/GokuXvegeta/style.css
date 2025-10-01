@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    font-size: 22px;
+    background-image: url('universi3.jpeg');
+    background-attachment: fixed;
+    background-position: center ;
+    background-size: cover;
+    
+}
+.global{
+    background-color: rgba(207, 208, 214, 0.507);
+    width: 500px;
+    margin: auto;
+}
+#res{
+    text-align: center;
+}
+button{
+    background-color: brown;
+    border: none;
+    padding: 3px;
+    border-radius: 6px;
+}
