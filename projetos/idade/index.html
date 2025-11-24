@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Idade atual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body >
+    <header><h1>Sua Idade atual</h1></header>
+    <main>
+        <div id="msg">
+            <p>
+               Ano de nascimento <input type="number" id="ano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" class="sexo" checked> 
+                <label for="mas"  >Masculino</label>
+                <input type="radio" class="sexo" name="sexo"> 
+                <label for="fem">Feminino</label>
+            
+            </p>
+        </div>
+
+        <div id="res">
+        
+        </div><img src="fotos/bebeM.png" alt="foto" id="img"> <br>
+        <button class="verif" onclick="idade()">Verificar</button>
+    </main>
+    <aside> &copy; Iralberg</aside>
+</body>
+<script src="script.js"></script>
+</html>

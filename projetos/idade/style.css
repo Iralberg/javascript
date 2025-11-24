@@ -1,0 +1,41 @@
+ body{
+    background-color: rgb(26, 118, 194);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; flex-wrap: wrap;
+ }
+ main{
+    width: 470px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    font-size: 27px;
+    color: black;
+    border-radius: 10px;
+   
+}
+#msg{
+   font-family: Arial, Helvetica, sans-serif;
+  
+}
+h1{
+   font-size: 40px;
+}
+aside{
+   margin-top: 10px;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.verif{
+   background-color: green;
+   border: none;
+   padding: 3px;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 20px;
+}
+#ano{
+   font-size: 18px;
+width: 170px;
+}

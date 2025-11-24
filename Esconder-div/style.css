@@ -1,0 +1,16 @@
+#container{
+text-align: center;
+background-color: rgb(122, 114, 102);
+padding: 5px;
+font-size: 11px;
+}
+#container-b{
+text-align: center;
+background-color: rgb(114, 184, 124);
+padding: 5px;
+font-size: 11px;
+
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+   <button onclick="mostrar()">Mostrar</button>  
+   <div class="caixa">
+
+    </div>
+   
+
+    <script> 
+function mostrar(){
+let caixa=document.querySelector('.caixa')
+caixa.innerText='oi'
+for(let a=2; a<=10;a++){
+    let item=document.createElement('p')
+    item.innerHTML='ola'
+    caixa.appendChild(item)
+}
+}
+
+    </script>
+</body>
+</html>

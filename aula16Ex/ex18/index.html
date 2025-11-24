@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> Analizador de Números</h1>
+    </header>
+    <main>
+        <div id="msg">
+            <label for="msg">Numero de (1 a 100)</label>
+            <input type="number" name="num" id="num">
+            <button onclick="adicionar()">Adicionar</button> <br> <br>
+            <select name="tab" id="tab" size="6">
+
+            </select> <br>
+            <button id="finalizar" onclick="finalizar()">Finalizar</button>
+        </div>
+
+        <div id="res">
+        </div>
+    </main>
+    <aside> &copy; Iralberg Sampaio</aside>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word → PDF</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      padding: 40px;
+    }
+    #preview {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+    button, input[type="file"] {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Converter Word (.docx) → PDF</h1>
+
+  <input id="fileInput" type="file" accept=".docx">
+  <br>
+  <button id="convertBtn">Converter para PDF</button>
+  <p id="status"></p>
+
+  <div id="preview"></div>
+
+  <!-- libs -->
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const convertBtn = document.getElementById('convertBtn');
+    const status = document.getElementById('status');
+    const preview = document.getElementById('preview');
+
+    convertBtn.addEventListener('click', async () => {
+      const file = fileInput.files && fileInput.files[0];
+      if (!file) { 
+        status.textContent = 'Escolha um arquivo Word (.docx) primeiro!';
+        return; 
+      }
+
+      status.textContent = 'Convertendo...';
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const result = await mammoth.convertToHtml({ arrayBuffer });
+        preview.innerHTML = result.value;
+
+        const opt = {
+          margin: 10,
+          filename: file.name.replace(/\.docx$/i, ".pdf"),
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        await html2pdf().set(opt).from(preview).save();
+        status.textContent = "PDF gerado com sucesso!";
+      } catch (err) {
+        console.error(err);
+        status.textContent = "Erro na conversão: " + err.message;
+      }
+    });
+  </script>
+</body>
+</html>
