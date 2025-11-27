@@ -5,10 +5,10 @@
 body{
     text-align: center;
     font-size: 22px;
-    background-image: url('universi3.jpeg');
+    background-image: url('goku-vs-vegeta-3440x1440-19301.jpg');
     background-attachment: fixed;
-    background-position: center ;
-    background-size: cover;
+    background-position: center center;
+    background-size: 100% 100%;
     
 }
 .global{
@@ -24,4 +24,8 @@ button{
     border: none;
     padding: 3px;
     border-radius: 6px;
+}
+#foto{
+    height: 300px;
+    width: 200px;
 }
