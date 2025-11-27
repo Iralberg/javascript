@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Goku vs vegeta</title>
 </head>
+
 <body>
-     <h1>Goku vs Vegeta</h1>
-     <div class="global">
-       
-        <input type="radio" name="rad" id="mas" >
-        <label for="gok">Goku</label>
-        <input type="radio" id="veg" name="rad" checked>
-        <label for="veg">vegeta</label>
-        <button onclick="salvar()">Ver resultado</button>
-        <br/>
+    <h1>Goku vs Vegeta</h1>
+    <div class="global">
+        <div id="container">
+
+            <input type="radio" name="rad" id="mas">
+            <label for="gok">Goku</label>
+            <input type="radio" id="veg" name="rad" checked>
+            <label for="veg">vegeta</label>
+            <button onclick="salvar()">Ver resultado</button>
+            <br />
             <div id="res">
-                
+
             </div>
-            <img src="vegeta.png" id="foto"    alt="foto">
+
+            <div class="foto">
+                <img src="vegeta.png" id="foto" alt="foto">
+            </div>
+        </div>
+
+
+
+
     </div>
-   
+
 </body>
 <script src="script.js"></script>
+
 </html>

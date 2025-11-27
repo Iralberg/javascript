@@ -8,12 +8,17 @@ body{
     background-image: url('goku-vs-vegeta-3440x1440-19301.jpg');
     background-attachment: fixed;
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: cover;
     
 }
 .global{
+    position: relative;
     background-color: rgba(207, 208, 214, 0.507);
-    width: 500px;
+    max-width: 500px;
+    margin: auto;
+   
+}
+#container{
     margin: auto;
 }
 #res{
@@ -28,4 +33,8 @@ button{
 #foto{
     height: 300px;
     width: 200px;
+}
+.foto{
+    
+    margin: auto;
 }
