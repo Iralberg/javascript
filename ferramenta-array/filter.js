@@ -7,7 +7,7 @@ Filter(Filtrar o array)
         -Array Completo
 */
 const produtos = [
-    { id: 1, nome: "Mouse Gamer", preco: 99.90, temDesconto: true, quantidade: 12 },
+    { id: 1, nome: "Mouse Gamer", preco: 97.90, temDesconto: true, quantidade: 12 },
     { id: 2, nome: "Teclado Mecânico", preco: 249.50, temDesconto: false, quantidade: 7 },
     { id: 3, nome: "Headset USB", preco: 149.99, temDesconto: true, quantidade: 20 },
     { id: 4, nome: "Monitor 24\"", preco: 899.00, temDesconto: false, quantidade: 5 },
@@ -16,7 +16,7 @@ const produtos = [
     { id: 7, nome: "Mousepad Grande", preco: 39.90, temDesconto: false, quantidade: 30 },
     { id: 8, nome: "SSD 480GB", preco: 229.99, temDesconto: true, quantidade: 14 },
     { id: 9, nome: "Smartwatch XPTO", preco: 399.90, temDesconto: true, quantidade: 6 },
-    { id: 10, nome: "Caixa de Som Bluetooth", preco: 159.90, temDesconto: false, quantidade: 18 }
+    { id: 10, nome: "Caixa de Som Bluetooth", preco: 159.90, temDesconto: false, quantidade: 18}
 ];
 const produtosPromoçao= produtos.filter(item => item.temDesconto)
 console.log(produtosPromoçao)
