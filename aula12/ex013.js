@@ -26,4 +26,5 @@ switch (seman){
         default:
             console.log('Error.Valor inválido')
             break
+    
 }
